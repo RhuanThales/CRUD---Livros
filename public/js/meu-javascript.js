@@ -3,40 +3,35 @@ new Vue({
   data: {
     colunas: ['Id', 'Nome', 'Preço', 'Tipo', 'Autor'],
     listagem: [{
-      nome: "Chapeuzinho Vermelho",
-      preco: 50.60,
+      nome: "Turma da Mônica",
+      preco: 7.99,
       tipo: "Infantil",
-      autor: "H.P Lovecraft"
+      autor: "Mauricio de Sousa"
     }, {
-      nome: "Rapunzel",
-      preco: 30.40,
+      nome: "Bisa Bia, Bisa Bel",
+      preco: 10.45,
       tipo: "Infantil",
-      autor: "Lovecraft"
+      autor: "Ana Maria Machado"
     }, {
-      nome: "O pequeno principe",
-      preco: 10.00,
+      nome: "A história dos pingos",
+      preco: 4.25,
       tipo: "Infantil",
-      autor: "H.P"
+      autor: "Mary França e Eliardo França"
     }, {
-      nome: "Vermelho",
-      preco: 90.60,
+      nome: "O Fantástico Mistério de Feiurinha",
+      preco: 3.65,
       tipo: "Infantil",
-      autor: "H.P Lovecraft"
+      autor: "Pedro Bandeira"
     }, {
-      nome: "Chapeuzinho",
-      preco: 80.60,
+      nome: "Diário de um Banana",
+      preco: 8.15,
       tipo: "Infantil",
-      autor: "H.P Lovecraft"
+      autor: "Jeff Kinney"
     }, {
-      nome: "ChapeuzinhoAmarelo",
-      preco: 20.60,
+      nome: "Chapeuzinho Amarelo",
+      preco: 6.55,
       tipo: "Infantil",
-      autor: "H.P Lovecraft"
-    }, {
-      nome: "ChapeuzinhoBranco",
-      preco: 30.60,
-      tipo: "Infantil",
-      autor: "H.P Lovecraft"
+      autor: "Chico Buarque e Ziraldo"
     }],
     input: {
       nome: "",

@@ -11,7 +11,111 @@
 	
 	<body>
 		<div id="app">
-			
+			<h2 class="head">CRUD - Livros</h2>
+			<div>
+				<fieldset>
+					<h2>Adicionar Livro</h2>
+					<table class="tabAdd-livros" v-show="listagem">
+						<tbody>
+							<tr>
+								<td colspan="2">
+								    <div class="input-field">
+								      	<label for="nome">Nome:</label>
+								      	<input placeholder="Ex: O Menino Maluquinho" ref="nome" v-model="input.nome" id="nome" type="text">
+								    </div>
+								</td>
+								<td>
+								    <div class="input-field">
+								      	<label for="preco">Preço:</label>
+								      	<input placeholder="Ex: 5.99" v-model="input.preco" id="preco" type="text">
+								    </div>
+								</td>
+								<td>
+								    <div class="input-field">
+								      	<label for="tipo">Tipo:</label>
+								      	<input placeholder="Ex: Infantil" v-model="input.tipo" id="tipo" type="text">
+								    </div>
+								</td>
+								<td>
+								    <div class="input-field">
+								      	<label for="autor">Autor:</label>
+								      	<input placeholder="Ex: Ziraldo" v-model="input.autor" id="autor" type="text">
+								    </div>
+								</td>
+								<td><button @click="add" class="btn-add-livros">Adicionar</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</fieldset>
+			</div>
+
+			<div>
+				<fieldset>
+				  	<h2>Lista de Livros</h2>
+				  	<div>
+				  		<table class="lista-livros" v-show="listagem.length">
+				  		  	<thead class="lista-livros">
+				  		    	<tr class="lista-livros">
+				  		      		<th v-for="colunas in colunas" class="lista-livros">
+				  		        		{{colunas}}
+				  		      		</th>
+				  		    	</tr>
+				  		  	</thead>
+				  		  	<tbody class="lista-livros">
+				  		    	<tr v-for="(listagem,index) in listagem" class="lista-livros">
+				  		      		<td class="lista-livros">{{index}}</td>
+				  		      		<td class="lista-livros">
+				  		        		{{listagem.nome}}
+				  		      		</td>
+				  		      		<td class="lista-livros">
+				  		        		R$ {{listagem.preco}}
+				  		      		</td>
+				  		      		<td class="lista-livros">
+				  		        		{{listagem.tipo}}
+				  		      		</td>
+				  		      		<td class="lista-livros">
+				  		        		{{listagem.autor}}
+				  		      		</td>
+				  		      		<td class="lista-livros">
+				  		        		<button @click="edit(index)" class="btn-editar-livros">Editar</button>
+				  		        		<button @click="deplete(index)" class="btn-excluir-livros">Excluir</button>
+				  		      		</td>
+				  		    	</tr>
+				  		  	</tbody>
+				  		</table>
+				  	</div>
+				</fieldset>
+			</div>
+
+			<div>
+			  	<fieldset>
+			      	<div>
+			      		<h4 class="">Editar</h4>
+			      		<p class="">Atualizar as informações</p>	
+			      	</div>
+			      	<form class="edit-form">
+			      	    <div class="inputDiv">
+			      	      	<label for="livro_nome" class="formLabel">Nome:</label>
+			      	      	<input placeholder="Ex: O Menino Maluquinho" id="livro_nome" type="text" v-model="editarInput.nome" class="formInput">
+			      	    </div>
+			      	    <div class="inputDiv">
+			      	      	<label for="livro_preco" class="formLabel">Preço:</label>
+			      	      	<input placeholder="Ex: 5.99" id="livro_preco" type="text" v-model="editarInput.preco" class="formInput">
+			      	    </div>
+			      	    <div class="inputDiv">
+			      	      	<label for="livro_tipo" class="formLabel">Tipo:</label>
+			      	      	<input placeholder="Ex: Infantil" id="livro_tipo" type="text" v-model="editarInput.tipo" class="formInput">
+			      	    </div>
+			      	    <div class="inputDiv">
+			      	      	<label for="livro_autor" class="formLabel">Autor:</label>
+			      	      	<input placeholder="Ex: Ziraldo" id="livro_autor" type="text" v-model="editarInput.autor" class="formInput">
+			      	    </div>
+			      	</form>
+			      	<div>
+			      	  <button @click="update" class="btn-update-livros">Atualizar</button>
+			      	</div>    	
+			      </fieldset>
+			</div>
 		</div>
 
 		<script type="text/javascript" src="js/vue.js"></script>
