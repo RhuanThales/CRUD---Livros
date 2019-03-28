@@ -1,0 +1,14 @@
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\bin\Debug\netcoreapp2.2\AspNetCore.deps.json
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\bin\Debug\netcoreapp2.2\AspNetCore.runtimeconfig.json
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\bin\Debug\netcoreapp2.2\AspNetCore.runtimeconfig.dev.json
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\bin\Debug\netcoreapp2.2\AspNetCore.dll
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\bin\Debug\netcoreapp2.2\AspNetCore.pdb
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\obj\Debug\netcoreapp2.2\AspNetCore.csprojAssemblyReference.cache
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\obj\Debug\netcoreapp2.2\AspNetCore.csproj.CoreCompileInputs.cache
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\obj\Debug\netcoreapp2.2\AspNetCore.RazorAssemblyInfo.cache
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\obj\Debug\netcoreapp2.2\AspNetCore.RazorAssemblyInfo.cs
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\obj\Debug\netcoreapp2.2\AspNetCore.AssemblyInfoInputs.cache
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\obj\Debug\netcoreapp2.2\AspNetCore.AssemblyInfo.cs
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\obj\Debug\netcoreapp2.2\AspNetCore.RazorTargetAssemblyInfo.cache
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\obj\Debug\netcoreapp2.2\AspNetCore.dll
+c:\Users\Rhuan\Documents\GitHub\CRUD---Livros\crud-livraria\AspNetCore\obj\Debug\netcoreapp2.2\AspNetCore.pdb

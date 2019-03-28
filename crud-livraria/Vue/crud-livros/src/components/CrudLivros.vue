@@ -80,9 +80,9 @@
           this.loading = false
         }
       },
-      async updateCrudItem(crudItem) {
+      async updateCrudItem(crudLivro) {
         // Uso o Object.assign() para criar uma nova (e separada) instancia
-        this.model = Object.assign({}, crudItem)
+        this.model = Object.assign({}, crudLivro)
       },
       async createCrudItem() {
         const isUpdate = !!this.model.id;
@@ -100,7 +100,7 @@
         await this.getAll()
       },
       async deleteCrudItem(id) {
-        if (confirm('Are you sure you want to delete this record?')) {
+        if (confirm('Tem certeza que deseja excluir esse livro?')) {
           // Se editar um livro que foi deletado, remove ele da area de preenchimento
           if (this.model.id === id) {
             this.model = {}
