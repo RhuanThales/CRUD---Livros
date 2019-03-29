@@ -18,21 +18,21 @@ namespace AspNetCore.Controllers
 
     // GET api/crudlivros
     [HttpGet]
-    public async Task<ActionResult<List<CrudLivros>>> Get()
+    public async Task<ActionResult<List<CrudLivro>>> Get()
     {
       return await _dbContext.CrudLivros.ToListAsync();
     }
 
     // GET api/crudlivros/5
     [HttpGet("{id}")]
-    public async Task<ActionResult<CrudLivros>> Get(string id)
+    public async Task<ActionResult<CrudLivro>> Get(string id)
     {
       return await _dbContext.CrudLivros.FindAsync(id);
     }
 
     // POST api/crudlivros
     [HttpPost]
-    public async Task Post(CrudLivros model)
+    public async Task Post(CrudLivro model)
     {
       await _dbContext.AddAsync(model);
       
@@ -41,7 +41,7 @@ namespace AspNetCore.Controllers
 
     // PUT api/crudlivros/5
     [HttpPut("{id}")]
-    public async Task<ActionResult> Put(string id, CrudLivros model)
+    public async Task<ActionResult> Put(string id, CrudLivro model)
     {
       var exists = await _dbContext.CrudLivros.AnyAsync(f => f.Id == id);
       if (!exists)

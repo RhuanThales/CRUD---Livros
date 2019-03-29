@@ -3,14 +3,7 @@
     <header>
       <b-navbar toggleable="md" type="light" variant="light">
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-        <b-navbar-brand to="/">CRUD - Livros</b-navbar-brand> <!--Titulo mostrado na página inicial-->
-        <b-collapse is-nav id="nav-collapse">
-          <b-navbar-nav>
-            <b-nav-item to="/crud-livros">Livros</b-nav-item>
-            <b-nav-item href="#" @click.prevent="login" v-if="!user">Faça Login</b-nav-item>
-            <b-nav-item href="#" @click.prevent="logout" v-else>Sair</b-nav-item>
-          </b-navbar-nav>
-        </b-collapse>
+        <b-navbar-brand to="/crud-livros">CRUD - Livros</b-navbar-brand> <!--Titulo mostrado na página inicial-->
       </b-navbar>
     </header>
     <main>
@@ -27,29 +20,8 @@
       user: null
     }
   },
-  async created() {
-    await this.refreshUser()
-  },
-  watch: {
-    '$route': 'onRouteChange'
-  },
   methods: {
-    login() {
-      this.$auth.loginRedirect()
-    },
-    async onRouteChange() {
-      // cada vez que uma rota é alterada, atualize os detalhes do usuário
-      await this.refreshUser()
-    },
-    async refreshUser() {
-      // obter novos detalhes do usuário e armazená-los no objeto do usuário
-      this.user = await this.$auth.getUser()
-    },
-    async logout() {
-      await this.$auth.logout()
-      await this.refreshUser()
-      this.$router.push('/')
-    }
+
   }
 }
 </script>
