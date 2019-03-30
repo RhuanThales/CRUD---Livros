@@ -1,6 +1,7 @@
 <template>
   <div class="container-fluid mt-4">
     <h1 class="h1">CRUD - Livros</h1>
+    <h2>Em cada Livro um novo mundo para descobrir!</h2>
     <!-- Esse alert exibe um mensagem de carregamento quando a pagina é acessada ou atualizada-->
     <b-alert :show="loading" variant="info">Carregando...</b-alert>
     <b-row>
@@ -32,7 +33,7 @@
         </table>
       </b-col>
       <b-col lg="3">
-        <b-card :title="(model.id ? 'Editar Livro ID#' + model.id : 'Novo Livro')">
+        <b-card :title="(model.id ? 'Editar Livro: ' + model.nome : 'Novo Livro')">
           <form @submit.prevent="createCrudItem">
             <b-form-group label="Nome:">
               <b-form-input type="text" v-model="model.nome"></b-form-input>
@@ -47,7 +48,7 @@
               <b-form-input type="text" v-model="model.autor" ></b-form-input>
             </b-form-group>
             <div>
-              <b-btn type="submit" variant="success">Salvar Livro</b-btn>
+              <b-btn type="submit" variant="success">Salvar</b-btn>
             </div>
           </form>
         </b-card>

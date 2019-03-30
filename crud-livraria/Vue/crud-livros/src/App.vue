@@ -3,7 +3,7 @@
     <header>
       <b-navbar toggleable="md" type="light" variant="light">
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-        <b-navbar-brand to="/crud-livros">CRUD - Livros</b-navbar-brand> <!--Titulo mostrado na página inicial-->
+        <b-navbar-brand to="/">CRUD - Livros</b-navbar-brand> <!--Titulo mostrado na página inicial-->
       </b-navbar>
     </header>
     <main>
